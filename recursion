@@ -1,0 +1,24 @@
+//A good example of recursion is factorial.
+
+#include <stdio.h>
+int factorial(int x);//prototype-We are telling the compiler that we will declare a function. The reunction will take an argument x as int and also return an int.
+
+int main() {
+    int b;
+    printf("Enter the number\n");
+    scanf("%d",&b);
+    int a=factorial(b);
+    printf("The value is %d\n",a);
+    
+
+    return 0;
+}
+
+int factorial(int x){
+    if (x==1 || x==0){
+        return 1;
+    }
+    else{
+        return x*factorial(x-1);
+    }
+}
