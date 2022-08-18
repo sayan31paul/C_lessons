@@ -1,0 +1,31 @@
+// Online C compiler to run C program online
+//Recursion:-A fucntion defined in c can call itself.This is called recursion.A function calling itself is called recursive function.
+//A good example of recursion is factorial.
+
+#include <stdio.h>
+int factorial(int x);//prototype-We are telling the compiler that we will declare a function. The reunction will take an argument x as int and also return an int.
+
+int main() {
+    int b;
+    printf("Enter the number\n");
+    scanf("%d",&b);
+    int a=factorial(b);
+    printf("The value is %d\n",a);
+    
+
+    return 0;
+}
+
+int factorial(int x){
+    if (x==1 || x==0){//This is the base condition.
+        return 1;
+    }
+    else{
+        return x*factorial(x-1);
+    }
+}
+
+
+//Recursion is sometimes the most direct way to code an algorithm
+//The condition which doesnot call the function any further in a recursive function is called the base condition. The function will go on running if the base condition is not present.
+//Sometimes due to a mistake made by the programmer, a recursive function can keep running without returning, resulting in  a memory error.
