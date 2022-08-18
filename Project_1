@@ -1,0 +1,33 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#include<stdlib.h>
+#include<time.h>
+
+int main() {
+    // Write C code here
+    int number,guess;
+    int n_guesses=1;
+    srand(time(0));
+    number=rand()%100+1;//genertaes random number between 1 and 100
+    //printf("The number is %d",number);
+    //keep running the loop until the random number is reached.
+    //do wgile loop runs atleast once.
+    //We had to give atleast once chance to user.So we used do while loop
+    do{
+        printf("Guess the number between 1 and 100\n");
+        scanf("%d",&guess);
+        if(guess>number){
+            printf("Lower number please\n");
+        }
+        else if(guess<number){
+            printf("Higher number please");
+        }
+        else if(guess==number){
+            printf("Perfect!!!!\n");
+            break;
+        }
+        n_guesses+=1;
+    }while (guess!=number);
+    printf("You guessed in %d attempts\n",n_guesses);
+    return 0;
+}
