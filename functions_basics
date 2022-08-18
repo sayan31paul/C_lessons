@@ -1,0 +1,13 @@
+#include <stdio.h>
+void display();//function prototype. Here we are telling the compiler that we will define a function.
+
+int main() {
+    display();//calling the function display.
+    
+    
+
+    return 0;
+}
+
+void display(){//void means that the function will nottake any arguments and not return anything.
+printf("this is display\n");
