@@ -1,0 +1,14 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int side;
+    printf("Enter the value of side\n");
+    scanf("%d",&side);
+    printf("The value of area is %d",(int)pow(side,2)); //type casting is done here
+    // Write C code here
+    
+
+    return 0;
+}
