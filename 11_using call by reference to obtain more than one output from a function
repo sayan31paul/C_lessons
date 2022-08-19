@@ -1,0 +1,22 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+//void sunAndAvg(int a,int b,int *sum,float *avg);
+void sunAndAvg(int a,int b,int *sum,float *avg){
+    *sum=a+b;
+    *avg=(float)(*sum/2);
+    
+}
+
+int main() {
+    int i,j,sum;
+    float avg;
+    i=3;
+    j=6;
+    sumAndAvg(i,j,&sum,&avg);
+    printf("The value of sum is %d\n",sum);
+    printf("The value of average is %f\n",avg);
+
+    return 0;
+}
+
+//float *avg means that the pointer will store the location of a float variable.
