@@ -11,3 +11,4 @@ int main() {
 
 //The result that will be printed here is 5 5 3 because the sequence of execution will be from right to left in printf function.
 //printf function does the execution form right to left.
+//please keep in mind that a++,++a will act  as asignment operator, wherever you keep it in the program.
