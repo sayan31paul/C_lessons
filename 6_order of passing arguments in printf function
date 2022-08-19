@@ -1,0 +1,13 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int a=3;
+    printf("%d %d %d",a,++a,a++);
+    
+
+    return 0;
+}
+
+//The result that will be printed here is 5 5 3 because the sequence of execution will be from right to left in printf function.
+//printf function does the execution form right to left.
