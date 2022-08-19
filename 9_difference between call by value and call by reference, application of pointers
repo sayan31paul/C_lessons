@@ -10,7 +10,7 @@ int main() {
     printf("The value of x and y is %d and %d \n",x,y);
     printf("\n");
     printf("The value of x and y is %d and %d \n",x,y);
-    swap(&x,&y);// will not work due to call by value.
+    swap(&x,&y);// will  work due to call by reference.
     printf("The value of x and y is %d and %d \n",x,y);
     
     
