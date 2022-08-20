@@ -1,0 +1,16 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+void printArray(int *ptr,int n){
+    for(int i=0;i<n;i++){
+        printf("The value of element %d is %d \n",i+1,*(ptr+i));
+    }
+}
+
+int main() {
+    int arr[]={1,2,35,45,26,26,52};
+    int *loc=&arr[0];
+    printArray(loc,7);
+
+    return 0;
+}
