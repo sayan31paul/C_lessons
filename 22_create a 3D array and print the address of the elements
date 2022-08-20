@@ -1,0 +1,17 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int arr[3][3][3];
+    int *loc[27];
+    int a=0;
+    for(int row=0;row<3;row++){
+        for(int column=0;column<3;column++){
+            for(int depth=0;depth<3;depth++){
+                printf("The address of arr[%d][%d][%d] is %u\n",row,column,depth,&arr[row][column][depth]);
+            }
+        }
+    }
+    return 0;
+    
+    }
