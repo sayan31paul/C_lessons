@@ -1,0 +1,13 @@
+// gets() is used to input multi-word string. 
+#include <stdio.h>
+
+int main() {
+    char s[50];
+    printf("Enter your name: ");
+    gets(s); //We are not using "&" because array already indicates a location.
+    printf("Your name is %s",s);
+    return 0;
+}
+
+//multiple gets() calls will be needed for multiple strings.
+//Likewise puts can be used to output a string.
