@@ -10,4 +10,5 @@ int main() {
 }
 
 //multiple gets() calls will be needed for multiple strings.
-//Likewise puts can be used to output a string.
+//gets() can take a string with multiple sentences without calling it mkultiple times.
+//Likewise puts() can be used to output a string.
