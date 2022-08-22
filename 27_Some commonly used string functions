@@ -1,0 +1,41 @@
+// Some commonly used string functons.
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    
+    //trying strlen()
+    char *st="Harry";
+    int a=strlen(st);
+    printf("The length of string st is %d\n",a);
+    
+    //trying strcpy()
+    char source[]="Harry";
+    char target[30];
+    strcpy(target,source);
+    printf("Now the target is %s\n",source);
+    
+    //trying strcat()
+    char st1[45]="Hello";
+    char *st2="Harry";
+    strcat(st1,st2); //st1 will store the new value of the string.
+    printf("Now the st1 is %s\n",st1);
+    //Note that space is not being added automatically.
+    //strcat() simply attaches st2 to st1.
+    
+    //trying strcmp
+    char str1[45]="Hello";
+    char *str2="Hellp";
+    int val=strcmp(str1,str2);
+    printf("Now the val is %d\n",val);
+    
+    printf("%d\n",strcmp("Fun","Joke"));
+    printf("%d\n",strcmp("Joke","Fun"));
+    printf("%d\n",strcmp("Joke","Joke"));
+    
+
+    return 0;
+}
+//Note that strlen() tells the string length excluding the null character.
+//strcmp is used to compare two strings.It returns 0 if strings are equal,
+//strcmp returns negative if first string's mismatching character's ASCII value is lesser than second string's corresponding mismatching character.
