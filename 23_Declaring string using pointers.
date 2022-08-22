@@ -1,0 +1,14 @@
+// declaring a string using pointers.
+#include <stdio.h>
+
+int main() {
+    char *ptr="Harry"; //"Harry" is string which is an array. An array is already anr address. So we don't need to use "&".
+    printf("%s",ptr);
+
+    return 0;
+}
+//This tells the compiler to store the string in memory and asigned address is stored in  a char pointer.
+
+//Note:
+//1.Once a string is defined using char st[]="Harry", it cannot be initialized to something else.
+//2.A string defined using pointers can be reinitialized. ptr="Rohan"
