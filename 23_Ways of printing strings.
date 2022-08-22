@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int main() {
+    char str[]="Harry"; //string automatically asigns "\0" at the end of the string.
+    char *ptr=str;
+    while(*ptr!="\0"){
+        printf("%c",*ptr);
+        ptr++;
+    }
+
+    return 0;
+}
+    
+//way 2
+#include <stdio.h>
+
+int main() {
+    char str[]={'H','a','r','r','y','\0'};
+    char *ptr=str;
+    while(*ptr!="\0"){
+        printf("%c",*ptr);
+        ptr++;
+    }
+
+    return 0;
+}
+
+//way 3(most convenient)
+#include <stdio.h>
+
+int main() {
+    char st[]="Harry Bhai";
+    printf("%s",st);
+
+    return 0;
+}
+
+
+
+
+    
+ 
