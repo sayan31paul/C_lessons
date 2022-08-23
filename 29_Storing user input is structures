@@ -1,0 +1,36 @@
+// Taking user inputs to store the details of 3 employees in structures. 
+#include <stdio.h>
+#include <string.h>
+
+struct employee{
+    int code;
+    float salary;
+    char name[10];// The string can hold a max of 10 characters.
+}; //Please remenber to give the ";" which is generally not used in other cases.
+
+int main() {
+    struct employee e1,e2,e3; //defining 3 variable e1,e2,e3 of datatype struct employee.
+
+    printf("Enter the value for code of e1: ");
+    scanf("%d", &e1.code);
+    printf("Enter the value for salary of e1: ");
+    scanf("%f", &e1.salary);
+    printf("Enter the value for name of e1: ");
+    scanf("%s", e1.name); //Note that here we are not using strcpy beacuse we are using %s.
+
+    printf("Enter the value for code of e2: ");
+    scanf("%d", &e2.code);
+    printf("Enter the value for salary of e2: ");
+    scanf("%f", &e2.salary);
+    printf("Enter the value for name of e2: ");
+    scanf("%s", e2.name);
+
+    printf("Enter the value for code of e3: ");
+    scanf("%d", &e3.code);
+    printf("Enter the value for salary of e3: ");
+    scanf("%f", &e3.salary);
+    printf("Enter the value for name of e3: ");
+    scanf("%s", e3.name);
+
+    return 0;
+}
