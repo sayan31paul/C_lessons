@@ -14,4 +14,6 @@ int main() {
     printf("The name is %s\n",harry.name);
 
     return 0;
+    
+    struct employee shubh={0} //Initialises all values to 0
 }
