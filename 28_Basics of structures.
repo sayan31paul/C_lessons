@@ -1,0 +1,31 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#include <string.h>
+struct employee{
+    int code;
+    float salary;
+    char name[10];
+};
+
+int main() {
+    int a=34;
+    char b='g';
+    float d=234.3543;
+    //employee e1
+    //e1.salary=34.454;//wont't work without employee structure.
+    
+    struct employee e1;//Here we have created a variable "e1" of datatype "struct employee". "struct employee" is a custom datatype.
+    e1.code=100; //Remenber that e1 is the variable name.
+    e1.salary=34.454;
+    //e1.name="Harry";//String is an array which cannot be declared in this manner.
+    strcpy(e1.name,"Harry");
+    
+    printf("%d\n",e1.code);
+    printf("%f\n",e1.salary);
+    printf("%s\n",e1.name);
+    printf("%.3f\n",e1.salary);//if we want the float only till 3 decimals.
+
+    return 0;
+}
+
+//So a structure in C is a collection of variables of different datatypes under a single name. 
