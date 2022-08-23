@@ -1,0 +1,18 @@
+//Pointers to structures.
+#include <stdio.h>
+#include <string.h>
+struct employee{
+    int code;
+    float salary;
+    char name[20];
+};
+
+int main() {
+    struct employee e1; //"e1" is the variable name and "struct employee" is the datatype.
+    struct employee *ptr; // int or float or char is replaced by struct employee datatype.
+    ptr=&e1; // we are storing e1 variable in *ptr.
+    (*ptr).code=101;// or ptr->code=101; // -> is known as arrow operator.
+    printf("%d",e1.code);
+
+    return 0;
+}
