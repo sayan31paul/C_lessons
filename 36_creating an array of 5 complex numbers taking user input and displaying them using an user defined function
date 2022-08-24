@@ -1,0 +1,51 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+struct complex{
+    float real;
+    float imaginary;
+};
+
+void show(struct complex c[5]){
+    int i=0;
+    for(i=0;i<5;i++){
+        printf("The %dth number is: %f + %f i \n",(i+1),c[i].real,c[i].imaginary);
+        
+    }
+    
+}
+
+int main() {
+    struct complex complexes[5];
+    
+    printf("Enter the real part of c1\n");
+    scanf("%f",&complexes[0].real);
+    printf("Enter the imaginary part of c1\n");
+    scanf("%f",&complexes[0].imaginary);
+    
+    printf("Enter the real part of c2\n");
+    scanf("%f",&complexes[1].real);
+    printf("Enter the imaginary part of c2\n");
+    scanf("%f",&complexes[1].imaginary);
+    
+    printf("Enter the real part of c3\n");
+    scanf("%f",&complexes[2].real);
+    printf("Enter the imaginary part of c3\n");
+    scanf("%f",&complexes[2].imaginary);
+    
+    printf("Enter the real part of c4\n");
+    scanf("%f",&complexes[3].real);
+    printf("Enter the imaginary part of c4\n");
+    scanf("%f",&complexes[3].imaginary);
+    
+    printf("Enter the real part of c5\n");
+    scanf("%f",&complexes[4].real);
+    printf("Enter the imaginary part of c5\n");
+    scanf("%f",&complexes[4].imaginary);
+    
+    show(complexes);
+    
+    
+    
+
+    return 0;
+}
