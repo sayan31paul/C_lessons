@@ -1,6 +1,6 @@
 // Online C compiler to run C program online
 #include <stdio.h>
-struct complex{
+struct complex{  //struct complex is the user defined data type.
     float real;
     float imaginary;
 };
@@ -15,7 +15,7 @@ void show(struct complex c[5]){
 }
 
 int main() {
-    struct complex complexes[5];
+    struct complex complexes[5]; //The array complexes will contain 5 variables to datatype struct complex
     
     printf("Enter the real part of c1\n");
     scanf("%f",&complexes[0].real);
