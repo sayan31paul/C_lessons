@@ -1,0 +1,50 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+struct date{
+    int day;
+    int month;
+    int year;
+};
+
+void displaydate(struct date d){
+    printf("The date is %d / %d / %d \n",d.day,d.month,d.year);
+}
+
+void d1_d2(struct date d1, struct date d2){
+    if (d1.year>d2.year){
+        printf("%d / %d / %d is earlier date\n",d2.day,d2.month,d2.year);
+    }
+    else if(d1.year<d2.year){
+        printf("%d / %d / %d is earlier date\n",d1.day,d1.month,d1.year);
+    }
+    else if(d1.year=d2.year){
+        if (d1.month>d2.month){
+        printf("%d / %d / %d is earlier date\n",d2.day,d2.month,d2.year);
+    }
+        else if(d1.month<d2.month){
+        printf("%d / %d / %d is earlier date\n",d1.day,d1.month,d1.year);
+        }
+        else if(d1.month=d2.month){
+            if (d1.day<d2.day){
+                printf("%d / %d / %d is earlier date\n",d2.day,d2.month,d2.year);
+            }
+            else if(d1.day>d2.day){
+                 printf("%d / %d / %d is earlier date\n",d2.day,d2.month,d2.year);
+            }
+            else{
+                printf("Same Date");
+            }
+        }
+    }
+        
+}
+int main() {
+    struct date d1={23,01,22};
+    struct date d2={30,12,23};
+    displaydate(d1);
+    displaydate(d2);
+    printf("\n");
+    d1_d2(d1,d2);
+
+    return 0;
+}
