@@ -1,0 +1,33 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+struct complex{
+    float real;
+    float imaginary;
+};
+
+struct complex vector_sum(struct complex v1,struct complex v2){
+    struct complex result;
+    result.real=v1.real+v2.real;
+    result.imaginary=v1.imaginary+v2.imaginary;
+    return result;
+}
+
+int main() {
+    struct complex v1;
+    v1.real=10.53;
+    v1.imaginary=11.236;
+    //printf("%f i + %f j",v1.real,v1.imaginary);
+    
+    struct complex v2;
+    v2.real=44.58;
+    v2.imaginary=96.63;
+    
+    struct complex sum=vector_sum(v1,v2);
+    printf("%f i+ %f j",sum.real,sum.imaginary);
+    
+    
+    
+    
+
+    return 0;
+}
