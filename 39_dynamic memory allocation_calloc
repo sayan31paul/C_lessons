@@ -1,4 +1,6 @@
 // Online C compiler to run C program online
+// Changing the size of an array is not allowed after it is created.
+//Most of the times it is required to change the size of array after creation. Here dynamic memory allocation comes to use.
 #include <stdio.h>
 #include <stdlib.h>
 
