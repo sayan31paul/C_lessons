@@ -1,0 +1,25 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    int *ptr;
+    
+    //sizeof operator in C.
+    //printf("The size of int on my pc is %d\n", sizeof(int));
+    //printf("The size of float on my pc is %d\n", sizeof(float));
+    //printf("The size of char on my pc is %d\n", sizeof(char));
+    
+    ptr=(int *)malloc(6*sizeof(int)); //malloc returns a void pointer. So we need to typecast it. "int *" is used for type casting.If we are allocating the pointer for storing character or float then use (char *) and (float * respectively) 
+    //The above expression resturns a null pointer if the memory cannot be allocated. Note that void pointer and null pointer are different.
+    for(int i=0;i<6;i++){
+        printf("Enter the value of %d element:\n",(i+1));
+        scanf("%d",&ptr[i]);
+    }
+    for(int i=0; i<6;i++){
+        printf("The value of %d element is: %d\n", i, ptr[i]); }
+    
+    
+    
+    return 0;
+}
