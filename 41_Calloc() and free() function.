@@ -1,0 +1,28 @@
+// Calloc stands for continuous allocation. It initialises every memory block with a default value of zero.
+
+//memory allocated using calloc() and malloc() is not deallocated automatically.
+//we can use free function to de allocate the memory.
+#include<stdio.h> 
+#include<stdlib.h> 
+
+int main(){
+    int *ptr; 
+    int n;
+    printf("Enter the number of inetegers you want to enter\n");
+    scanf("%d",&n);
+    ptr = (float *) malloc(n*sizeof(float)); 
+    for(int i=0; i<n;i++){
+         printf("Enter the value of %d element: \n", i+1); 
+         scanf("%d", &ptr[i]);
+    }
+    for(int i=0; i<n;i++){
+        printf("The value of %d element is: %d\n", i, ptr[i]); 
+    }
+    free(ptr);
+
+
+    for(int i=0; i<n;i++){
+        printf("The value of %d element is: %d\n", i, ptr[i]); 
+    }
+    return 0;
+}
