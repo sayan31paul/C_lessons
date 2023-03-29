@@ -1,5 +1,11 @@
 #include <stdio.h>
-
+//String is a array of characters terminated with a null character, i.e "\0"
+/*Ways to initialize string in C:
+1.String literals can be assigned without size. Here, the name of the string str acts as a pointer because it is an array.
+2.String literals can be assigned with a predefined size. But we should always account for one extra space which will be 
+assigned to the null character. If we want to store a string of size n then we should always declare a string with a size equal to or greater than n+1
+3.We can also assign a string character by character. But we should remember to set the end character as ‘\0’ which is a null character.
+4. We can assign character by character without size with the NULL character at the end. The size of the string is determined by the compiler automatically.*/
 int main() {
     char str[]="Harry"; //string automatically asigns "\0" at the end of the string.
     char *ptr=str;
