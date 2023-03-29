@@ -7,8 +7,8 @@ assigned to the null character. If we want to store a string of size n then we s
 3.We can also assign a string character by character. But we should remember to set the end character as ‘\0’ which is a null character.
 4. We can assign character by character without size with the NULL character at the end. The size of the string is determined by the compiler automatically.*/
 int main() {
-    char str[]="Harry"; //string automatically asigns "\0" at the end of the string.
-    char *ptr=str;
+    char str[]="Harry"; //string automatically asigns "\0" at the end of the string.Here str is a pointer to the array.
+    char *ptr=str; //We donot need to give "&" before "str" because str is already a pointer.
     while(*ptr!="\0"){
         printf("%c",*ptr);
         ptr++;
