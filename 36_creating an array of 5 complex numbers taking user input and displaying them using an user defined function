@@ -49,3 +49,34 @@ int main() {
 
     return 0;
 }
+
+
+
+//The same program can be written as
+#include <stdio.h>
+#include <string.h>
+
+struct complex{
+    float real;
+    float imaginary;
+};
+
+void show(struct complex c[5]){
+    int i=0;
+    for (int i=0;i<5;i++){
+        printf("The %d th number is %f + %f i\n",(i+1),c[i].real,c[i].imaginary);
+    }
+}
+int main()
+{   
+    struct complex comp[5];
+    for (int i=0;i<5;i++){
+        printf("Enten the real part of the %d th complex number\n",(i+1));
+        scanf("%f",&comp[i].real);
+        printf("Enten the imaginary part of the %d th complex number\n",(i+1));
+        scanf("%f",&comp[i].imaginary);
+    }
+    show(comp);
+
+    return 0;
+}
